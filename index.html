@@ -1,13 +1,150 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <h1>Hello World Html ? oO</h1>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon slayers only shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+         html {
+
+            {%if color %}
+            background-color: {{color|striptags|safe}};
+            {% endif %}
+
+            padding:2rem;
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+
+         main {
+            max-height: 1200px;
+
+        };
+
+        header div {
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+        footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+
+        #nav-ctr {
+            background-color: black !important;
+            width:100%;
+            padding:1rem;
+    }
+    .branding {
+        color : rgb(212, 97, 56) !important;
+        font-size:2rem;
+        font-weight: bold;
+    }
+
+    </style>
+<style>
+    .important {
+        color: #336699;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    .container {
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    p {
+        padding: 1em;
+        border-radius: 4px;
+    }
+
+    .shop {
+        background-color: #f7f7f9;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><a href="/auth/login">Login</a></li>
+                    <li><a href="/auth/register">Register</a></li>
+        </nav>
+    </header>
+
+<main>
+<div id="hero-ctr">
+    <img src="https://www.icegif.com/wp-content/uploads/2023/04/icegif-1255.gif" id="hero">
+</div>
+<div class="container">
+    <p class="important">Welcome to the Demon Slayer Shop!</p>
+    <p class="shop">
+        Discover our range of swords, costumes, and other unique artifacts.
+        Whether you're a fan of the series or a real demon slayer, you'll find something that suits you!
+    </p>
+    <button ><a href="/auth/login" id="explore">Explore Now</a></button>
+</div>
+
+<style>
+    .container {
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    p {
+        padding: 1em;
+        border-radius: 4px;
+    }
+
+    .shop {
+        background-color: #f7f7f9;
+        color: black;
+    }
+
+    #explore {
+        color: black;
+    }
+
+    #hero-ctr {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    #hero {
+        margin: 0 auto;
+
+    }
+</style>
+</main
+  <footer >
+        <p>&copy; 2023 <a src="https://twitter.com/YBK_FireLights" id="firecrackers">fir3cr4ckers </a></p>
+    </footer>
+
+    <!-- Including any additional JS scripts. You might want to switch to more lightweight alternatives if possible. -->
+    <script src="/js/jquery.min.js'"></script>
+    <style>
+        #firecrackers{
+        color:rgb(212, 97, 56);
+            font-weight: bold;
+    }
+
+    #username{
+    margin-left: auto;}
+
+
+
+    </style>
+</body>
+
+</html>%
